@@ -1,9 +1,12 @@
 package com.example.activty3;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,20 +20,21 @@ public class MainActivity extends AppCompatActivity {
     EditText edemail, edpassword;
 
     //deklarasi variabel untuk menyimpan email dan password
-    String nama,password;
+    String nama, password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //menghubungkan variabel btnLogin dengan componen button pada layout
-        btnLogin=findViewById(R.id.btSignin);
+        btnLogin = findViewById(R.id.btSignin);
 
         //menghubungkan variabel edemail dengan componen button pada layout
-        edemail=findViewById(R.id.edEmail);
+        edemail = findViewById(R.id.edEmail);
 
         //menghbungkan variabel edpassword dengan componen button pada layout
-        edpassword=findViewById(R.id.edPassword);
+        edpassword = findViewById(R.id.edPassword);
 
         //membuat fungsi onclick pada button btlogin
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -47,17 +51,17 @@ public class MainActivity extends AppCompatActivity {
                 String email = "admin@mail.com";
 
                 //membuat password yang benara
-                String pass ="123";
+                String pass = "123";
 
                 //cek apakah editetxt email dan password terdapat isi atau tidak
-                if (nama.isEmpty() || password.isEmpty()){
+                if (nama.isEmpty() || password.isEmpty()) {
                     //membuat variabel toast dan menampilkan pesan "text tidak boleh kosong"
                     Toast t = Toast.makeText(getApplicationContext(),
                             "email dan password tidak boleh kosong!!",
                             Toast.LENGTH_LONG);
                     //menampilkan toast
                     t.show();
-                } else{
+                } else {
                     //cek apakah isi dari email dan password sama dengan email dan password
                     if (nama.equals(email) && password.equals(pass)) {
                         //membuat variabel toast dan menampilkan pesan "login berhasil"
@@ -85,17 +89,36 @@ public class MainActivity extends AppCompatActivity {
 
                         //menampilkan ke activitykedua
                         startActivity(i);
-                  }else {
+                    } else {
                         //membuat variabel toast dan membuat toast menampilkan pesan "login gagal"
                         Toast t = Toast.makeText(getApplicationContext(),
-                        "Login Gagal", Toast.LENGTH_LONG);
+                                "Login Gagal", Toast.LENGTH_LONG);
 
                         //menampilkan Toast
-                        t.show();}
+                        t.show();
+                    }
                 }
 
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //method untuk menampilkan menu
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //membuat kondisi jika yang dipilih adalah id mnDaftar
+        if (item.getItemId() == R.id.mnDaftar) {
+            //method untuk memanggil activity "daftaractivity"
+            Intent i = new Intent(getApplicationContext(), DaftarActivity.class);
+            startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
