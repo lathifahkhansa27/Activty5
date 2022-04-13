@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_hasil2.xml" value="0.184375" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_kedua.xml" value="0.22" />
         <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_keempat.xml" value="0.16666666666666666" />
-        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_lihatdata.xml" value="0.16666666666666666" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_lihatdataa.xml" value="0.12182971014492754" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/layout/item_listview.xml" value="0.1" />
         <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/menu/menu.xml" value="0.16666666666666666" />
+        <entry key="..\:/Tugas Kuliah Semester 4/Pengembangan Aplikasi Mobile/Activty3/app/src/main/res/menu/popup_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

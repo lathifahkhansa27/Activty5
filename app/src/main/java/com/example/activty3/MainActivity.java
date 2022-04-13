@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //menghubungkan variabel btnLogin dengan componen button pada layout
         btnLogin = findViewById(R.id.btSignin);
 
+
         //menghubungkan variabel edemail dengan componen button pada layout
         edemail = findViewById(R.id.edEmail);
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         b.putString("b", password.trim());
 
                         //membuat objek intent berpindah activtu dari mainactivty ke activtyHasil
-                        Intent i = new Intent(getApplicationContext(), ActivityKedua.class);
+                        Intent i = new Intent(getApplicationContext(), HomeActivity.class);
 
                         //memasukan buddle kedalam intent untuk dikrim ke activityHasil
                         i.putExtras(b);
